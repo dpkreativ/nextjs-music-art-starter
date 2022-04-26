@@ -11,7 +11,7 @@ export default function Home() {
   const [myAlbumArtPreview, setmyAlbumArtPreview] = useState();
 
   // States for storing, uploading, and applying Neural Art Style Transfer
-  const [popArtPreview, setpopArtPreview] = useState();
+  const [popArtPreview, setPopArtPreview] = useState();
   const [popArtData, setPopArtData] = useState();
 
   // Loading States
@@ -53,7 +53,7 @@ export default function Home() {
     reader.readAsDataURL(e.target.files[0]);
 
     reader.onload = (onLoadEvent) => {
-      setPopArt(onLoadEvent.target.result);
+      setPopArtPreview(onLoadEvent.target.result);
     };
 
     e.target.value = '';
