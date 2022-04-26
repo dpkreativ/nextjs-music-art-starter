@@ -10,6 +10,7 @@ const UploadPopArt = ({ onChange, onSubmit, loading }) => {
         onSubmit={onSubmit}
         className="flex flex-col items-center space-y-2"
       >
+        {/* Image selection input */}
         <div className="relative">
           <input
             type="file"
@@ -23,6 +24,8 @@ const UploadPopArt = ({ onChange, onSubmit, loading }) => {
             Select Popular Album Art
           </label>
         </div>
+
+        {/* Submit button */}
         <button
           type="submit"
           className="bg-green-500 hover:bg-green-600 transition-all text-white font-semibold h-12 py-2 px-4 shadow rounded-lg w-max"

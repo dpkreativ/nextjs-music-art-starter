@@ -16,6 +16,7 @@ const CreateAlbumArt = ({
         className="flex flex-col space-y-2 items-center"
       >
         <div className="flex space-x-2">
+          {/* Image selection input */}
           <div className="relative">
             <input
               type="file"
@@ -30,6 +31,8 @@ const CreateAlbumArt = ({
               Select image
             </label>
           </div>
+
+          {/* Text input */}
           <input
             type="text"
             value={textValue}
@@ -38,6 +41,8 @@ const CreateAlbumArt = ({
             placeholder="Add album text here"
           />
         </div>
+
+        {/* Submit button */}
         <button
           type="submit"
           className="bg-green-500 hover:bg-green-600 transition-all text-white font-semibold py-2 px-4 h-12 shadow rounded-lg w-max"
