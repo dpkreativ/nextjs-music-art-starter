@@ -1,4 +1,3 @@
-import React from 'react';
 import { LoadingSVG } from './Icons';
 
 const UploadPopArt = ({ onChange, onSubmit, loading }) => {
