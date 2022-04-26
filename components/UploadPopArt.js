@@ -15,7 +15,6 @@ const UploadPopArt = ({ onChange, onSubmit, loading }) => {
             type="file"
             name="file"
             className="absolute z-10 w-52 h-12 opacity-0"
-            onChange={onChange}
           />
           <label
             htmlFor="file"
