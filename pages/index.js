@@ -92,7 +92,8 @@ export default function Home() {
           </h1>
         </header>
         <main className="grid md:grid-cols-2 gap-10">
-          {/* In this section below: 
+          {/* === SECTION ONE: SELECT, PREVIEW, AND UPLOAD IMAGE AND TEXT FOR YOUR ALBUM ART ===
+              In this section below: 
                 - You're selecting your own image which will be previewed, and adding some text to the state.
                 - You're uploading your image and text to Cloudinary which will handle image transformation.
                 - Cloudinary returns the transformed image, which you then display as a preview.
@@ -129,7 +130,8 @@ export default function Home() {
             />
           </section>
 
-          {/* In this section below: 
+          {/* === SECTION TWO: SELECT, PREVIEW, AND UPLOAD POPULAR ALBUM ART ===
+              In this section below: 
                 - You're selecting any popular album art image which will be previewed.
                 - You're uploading your selected album art image to Cloudinary which will return an object containing data like its public_id.
            */}
@@ -157,7 +159,8 @@ export default function Home() {
             />
           </section>
 
-          {/* In this section below: 
+          {/* === SECTION THREE: DISPLAY AI-GENERATED ALBUM ART ===
+              In this section below: 
                 - You're creating a dynamic image URL with Neural Art Style Transfer parameters applied.
                 - The URL is set as the image src and displays the AI-generated album art.
            */}
